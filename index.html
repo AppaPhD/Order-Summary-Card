@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-image: url("images/pattern-background-desktop.svg");
+      background-color:hsl(225, 100%, 94%);
+    }
+
+    .cardbase {
+      width: 375px;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /*text-align: center;*/
+      background-color: white;
+    }
+
+    .dancing_girl {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px 15px 0px 0px;
+    }
+
+    @font-face {
+      font-family: redHat;
+      src: url(RedHatDisplay-VariableFont_wght.ttf);
+      
+    }
+
+    p {
+      font-size: 16px;
+      font-family: redHat;
+      text-align: center;
+    }
+
+    strong {
+      font-family: redHat;
+    }
+
+    .change_link {
+      float: right;
+      color:hsl(249, 73%, 47%);
+      text-decoration: underline;
+      font-weight:bolder;
+      
+    }
+    .change_link:hover{
+      color: hsl(249, 37%, 66%);
+      text-decoration:none;
+    }
+    .spacer{
+      padding-left: 60px;
+      
+    }
+    .inline {
+      display: inline-block;
+    }
+
+    
+
+    .plan_selection {
+      background-color: hsl(227, 100%, 98%);
+      padding-top: 10px;
+      padding-bottom: 5px;
+      position: relative;
+      
+    }
+
+    .proceed_payment {
+      background-color: hsl(249, 73%, 47%);
+      padding: 1px;
+      
+    }
+
+    .proceed_payment:hover{
+      background-color: hsl(249, 37%, 66%);
+    }
+    .to_payment {
+      color: white;
+    }
+
+    .top_title {
+      font-size: x-large;
+      font-weight: bolder;
+    }
+
+    div {
+      border-radius: 15px;
+    }
+    .big_container{
+      padding: 30px;
+    }
+    .divider{
+      padding: 15px;
+    }
+    .music_icon{
+      padding-right: 15px;
+      padding-left: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+    .cost{
+      padding: 0;
+      line-height: 10px;
+      color: grey;
+    }
+
+    .description{
+      color: grey;
+    }
+    .cancel{
+      color:grey;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cardbase">
+
+    <img class="dancing_girl" src=images/illustration-hero.svg>
+
+    <div class="big_container">
+      <div class="descriptive_container">
+        <p class="top_title">
+          Order Summary
+        </p>
+
+        <p class="description">
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+
+
+      </div>
+
+      <div class="interactive_container">
+
+        <div class="plan_selection">
+
+          <div class="inline">
+            <img class="music_icon" src=images/icon-music.svg>
+          </div>
+
+          <div class="inline">
+            <p class="cost">
+              <strong>
+                <span style="color:black">Annual Plan</span>
+              </strong>
+            </p>
+            <p class="cost">
+              $59.99/year
+            </p>
+          </div>
+          <div class="inline">
+            <p class="spacer">
+
+            </p>
+          </div>
+          <div class="inline">
+            <p class="change_link">
+              Change
+            </p>
+          </div>
+
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="order_choices">
+          <div class="proceed_payment">
+            <p class="to_payment">
+              Proceed to Payment
+            </p>
+          </div>
+
+          <p class="cancel">
+            Cancel Order
+          </p>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Samuel Liu</a>.
+  </div>
+</body>
+
+</html>
